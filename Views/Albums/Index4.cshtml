@@ -27,8 +27,8 @@
 							<p class="card-text">@item.AlbumDescription</p>
 							<p class="card-text"><b>Stage: </b>@item.Stage.Name</p>
 							<p class="card-text"><b>Genre: </b>@item.AlbumGenre</p>
-							<p class="card-text"><b>Start Date: </b>@item.StartDate</p>
-							<p class="card-text"><b>End Date: </b>@item.EndDate</p>
+							<p class="card-text"><b>Start Date: </b>@item.StartDate.ToString("dd MMM yy")</p>
+							<p class="card-text"><b>End Date: </b>@item.EndDate.ToString("dd MMM yy")</p>
 							<p class="card-text"><b>Available: </b>Availability
 								@if (DateTime.Now >= item.StartDate && DateTime.Now <= item.EndDate)
 								{
